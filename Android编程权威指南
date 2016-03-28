@@ -1,0 +1,5 @@
+使用adb工具从命令行启动activity
+1. 配置activity
+  android:exported = "true"
+2. adb 命令
+  adb shell am start -n 包名/activity名
