@@ -9,3 +9,7 @@
 
 String s = getString(R.string.name, "Tom", "lucy");
 
+检查可以响应的activity
+    PackageManager pm = getPackageManager();
+    List<ResolveInfo> lists = pm.queryIntentActivities(yourIntent, 0);
+    boolean isIntentSafe = lists.size() > 0;
