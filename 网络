@@ -1,0 +1,10 @@
+# get post put delete
+Method Request-URI HTTP-Version CRLF  
+1.get 获取数据， post 修改数据， put增加数据， delete 删除数据
+2.get不会修改，增加数据，不会影响资源的状态。POST表示可能修改变服务器上的资源的请求。
+3.get请求的数据附在URL之后，例如：login.action?name=hyddd&password=idontknow&verify=%E4%BD%A0%E5%A5%BD，从而
+  post把数据放在HTTP包的包体中，所以post安全性要比get安全性高
+4.get方式提交的数据有限制
+  post方式提交的数据没有限制
+  
+  http://blog.csdn.net/mfe10714022/article/details/39692305
