@@ -7,23 +7,23 @@
 ###使用格式化字符串
 '<string name="name">%1$s! hello, how are u ? Hi, %2$S, I am fine !</string>
 
-String s = getString(R.string.name, "Tom", "lucy");'
+String s = getString(R.string.name, "Tom", "lucy"); '
 
 ###检查可以响应的activity
-    'PackageManager pm = getPackageManager();
+    ' PackageManager pm = getPackageManager();
     List<ResolveInfo> lists = pm.queryIntentActivities(yourIntent, 0);
-    boolean isIntentSafe = lists.size() > 0;'
+    boolean isIntentSafe = lists.size() > 0; '
 
 ###检查后台网络的可用性
-'ConnectivityManager cm = (ConnectivityManager)
+' ConnectivityManager cm = (ConnectivityManager)
             getSystemService(Context.CONNECTIVITY_SERVICE);
     @SuppressWarnings("deprecation")
     boolean isNetworkAvailable = cm.getBackgroundDataSetting() &&
-        cm.getActiveNetworkInfo() != null;'
+        cm.getActiveNetworkInfo() != null; '
 
 ###Notification用法
 
-'Resources r = getResources();
+' Resources r = getResources();
         PendingIntent pi = PendingIntent
             .getActivity(this, 0, new Intent(this, PhotoGalleryActivity.class), 0);
 
@@ -39,7 +39,7 @@ String s = getString(R.string.name, "Tom", "lucy");'
         NotificationManager notificationManager = (NotificationManager)
             getSystemService(NOTIFICATION_SERVICE);
 
-        notificationManager.notify(0, notification);'
+        notificationManager.notify(0, notification); '
 
 
 ###FragmentStatePagerAdapter与FragmentPagerAdapter
