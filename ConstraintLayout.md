@@ -3,36 +3,11 @@
 - 嵌套少
 - UI tools
 - 自动化
-> **引用**
+## 条件
+1. Android Studio 2.2或以上版本
+2. build.gradle文件中添加ConstraintLayout的依赖
+`compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'`
 
-![图片](http://mmbiz.qpic.cn/mmbiz_gif/v1LbPPWiaSt6amUiacxJ04yNrplc6AkQ5sS7yvNWHViauZbZpS86ejFPtGE0GVrV10BDgRTpB35hWfdE5gPDr54dw/0?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
-
-### 代码
-***
-    void quick_sort(int[] data, int start, int end)
-    {
-    	if(start >= end)
-    		return;
-    	
-    	int i = start;
-    	int j = end;
-    	int key = data[start];
-    
-    	while(1)
-    	{
-    		while(data[i] < key) i++;
-    		while(data[j] > key ) j--;
-    
-    		if(i >= j) break;
-    		
-    		int temp = data[i];
-    		data[i] = data[j];
-    		data[j] = temp;
-    		
-    		i++;
-    		j--;
-    	}
-    	
-    	quick_sort(data,start,i-1);
-    	quick_sort(data,j+1,end);
-    }
+### 参考链接
+* [最全面的ConstraintLayout教程](http://mp.weixin.qq.com/s/kf5iXAma5_6yhyS9gAQPkQ)
+* [Android ConstraintLayout详解](http://www.jianshu.com/p/a8b49ff64cd3)
